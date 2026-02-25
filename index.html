@@ -11,6 +11,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+    .post.featured header.major p,
+    .post.featured header.major h4,
+    .post.featured header.major ul {
+        text-align: left;
+    }
+
+    .post.featured header.major ul {
+        margin-left: 1.5rem;
+    }
+    </style>
 	</head>
 	<body class="is-preload">
 
@@ -63,17 +74,6 @@ Cleaned and transformed raw housing transaction data to improve data quality and
     <li>Split address fields using SUBSTRING(), PARSENAME(), and REPLACE().</li>
     <li>Removed duplicates with ROW_NUMBER() CTE and optimized schema.</li>
 </ul>
-<style>
-.post.featured header.major p,
-.post.featured header.major h4,
-.post.featured header.major ul {
-    text-align: left;
-}
-
-.post.featured header.major ul {
-    margin-left: 1.5rem;
-}
-</style>
 								</header>
 								<a href="https://github.com/Ashraful221/Portofolio_Project/blob/main/Portofoliio_Project_Nashville_Housing_SQL_Data_cleaning.sql" class="image main"><img src="images/housing.jpeg" alt="" /></a>
 								<ul class="actions special">
@@ -201,6 +201,7 @@ Cleaned and transformed raw housing transaction data to improve data quality and
 	</body>
 
 </html>
+
 
 
 
