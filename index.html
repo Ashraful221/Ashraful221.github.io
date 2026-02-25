@@ -12,16 +12,32 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-    .post.featured header.major p,
-    .post.featured header.major h4,
-    .post.featured header.major ul {
-        text-align: left;
-    }
+/* Featured post: make everything consistent + left aligned */
+.post.featured header.major {
+  text-align: left;
+}
 
-    .post.featured header.major ul {
-        margin-left: 1.5rem;
-    }
-    </style>
+/* Description: remove template italics + match body text */
+.post.featured header.major p {
+  font-style: normal;
+  margin-bottom: 1.25rem;
+}
+
+/* "Key Activities" heading: make it look like normal text (not big heading style) */
+.post.featured header.major h4 {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+  margin: 0 0 0.75rem 0;
+}
+
+/* Bullets */
+.post.featured header.major ul {
+  margin: 0 0 1.5rem 1.25rem;
+}
+</style>
 	</head>
 	<body class="is-preload">
 
@@ -201,6 +217,7 @@ Cleaned and transformed raw housing transaction data to improve data quality and
 	</body>
 
 </html>
+
 
 
 
